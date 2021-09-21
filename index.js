@@ -23,7 +23,7 @@ var typeTimer = setInterval(function() {
         p.innerHTML = str + "|"
         n = 1;
       } else {
-        p.innerHTML = str
+        p.innerHTML = str + "&nbsp"
         n = 0;
       };
     }, 700);
