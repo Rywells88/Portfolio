@@ -2,7 +2,7 @@ var p = document.getElementById('text');
 p.innerHTML = '';
 var n = 0;
 var m = 0;
-var str = 'This is a test.';
+var str = 'Welcome to My Portfolio.';
 var typeTimer = setInterval(function() {
   n = n + 1;
   if(m === 0){
@@ -15,15 +15,15 @@ var typeTimer = setInterval(function() {
   
   if (n === str.length) {
     clearInterval(typeTimer);
-    p.innerHTML = "> " + str;
+    p.innerHTML =  str;
     n = 0;
     setInterval(function() {
 
       if (n === 0) {
-        p.innerHTML = "> " + str + "|"
+        p.innerHTML = str + "|"
         n = 1;
       } else {
-        p.innerHTML = "> " + str
+        p.innerHTML = str
         n = 0;
       };
     }, 700);
