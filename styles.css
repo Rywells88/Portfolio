@@ -7,21 +7,27 @@
 }
 
 body{
-  background-color: black;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  height: 2000px;
+  overflow-x: hidden;
+}
+#text{
+  color:rgb(0, 0, 0);
 }
 pre {
-  background: #303030;
-  color: #f1f1f1;
+  background: #524e4e;
+  color: #000000;
   padding: 10px 16px;
-  border-radius: 2px;
-  border-top: 4px solid #00aeef;
+  border-radius: 1px;
   -moz-box-shadow: inset 0 0 10px #000;
   box-shadow: inset 0 0 10px #000;
   counter-reset: line;
 }
 pre span {
   display: block;
-  line-height: 0.5rem;
+  color:#ffffff;
+  line-height: 0.1rem;
 }
 pre span:before {
   counter-increment: line;
@@ -31,4 +37,12 @@ pre span:before {
   padding: 1em;
   margin-right: .5em;
   color: #888;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+.fade-in.appear{
+  opacity: 1;
 }
